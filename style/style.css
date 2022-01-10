@@ -150,6 +150,10 @@ color: #fff;
 .imageCard{
   border-radius: 25px;
 }
+.imageRight{
+  border-radius: 25px;
+  z-index: 99;
+}
 
 .section3Card{
   word-break: break-word;

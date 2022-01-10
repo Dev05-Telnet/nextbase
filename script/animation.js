@@ -114,13 +114,16 @@ new fullpage("#fullpage", {
     const bottomOrigin = $("#bottom-div", origin.item)[0];
     const bottomOneOrigin = $("#bottomToTop1", origin.item)[0];
     const bottomTwoOrigin = $("#bottomToTop2", origin.item)[0];
-    const bottomRowOrigin = $("#section4Row", origin.item)[0];
+    // const bottomRowOrigin = $("#section4Row", origin.item)[0];
+    // const bottomThreeOrigin = $("#bottomToTop3", origin.item)[0];
+
     const leftHalfDestination = $("#leftHalf", destination.item)[0];
     const rightHalfDestination = $("#rightHalf", destination.item)[0];
     const bottomDestination = $("#bottom-div", destination.item)[0];
     const bottomOneDestination = $("#bottomToTop1", destination.item)[0];
     const bottomTwoDestination = $("#bottomToTop2", destination.item)[0];
-    const bottomRowDestination = $("#section4Row", destination.item)[0];
+    // const bottomRowDestination = $("#section4Row", destination.item)[0];
+    // const bottomThreeDestination = $("#bottomToTop3", destination.item)[0];
 
     var duration = scrollingSpeed / 1000 / 2;
     var tl = gsap.timeline();
@@ -143,9 +146,13 @@ new fullpage("#fullpage", {
     btTwo.fromTo(bottomTwoOrigin, { opacity: 1 }, { y:"-100", opacity: 0, duration: duration});
     btTwo.fromTo(bottomTwoDestination, { y: "500", opacity: 0 }, { y: "0", opacity: 1, duration: duration });
 
-    var btRow = gsap.timeline();
-    btRow.fromTo(bottomRowOrigin, { opacity: 1 }, { y:"-100", opacity: 0, duration: duration});
-    btRow.fromTo(bottomRowDestination, { y: "200", opacity: 0 }, { y: "0", opacity: 1, duration: duration });
+    // var btRow = gsap.timeline();
+    // btRow.fromTo(bottomRowOrigin, { opacity: 1 }, { y:"-100", opacity: 0, duration: duration});
+    // btRow.fromTo(bottomRowDestination, { y: "200", opacity: 0 }, { y: "0", opacity: 1, duration: duration });
+   
+    // var btThree = gsap.timeline();
+    // btThree.fromTo(bottomThreeOrigin, { opacity: 1 }, { y:"-100", opacity: 0, duration: duration});
+    // btThree.fromTo(bottomThreeDestination, { y: "200", opacity: 0 }, { y: "0", opacity: 1, duration: duration });
 
     // content animation ends here
 
