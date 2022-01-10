@@ -112,9 +112,15 @@ new fullpage("#fullpage", {
     const leftHalfOrigin = $("#leftHalf", origin.item)[0];
     const rightHalfOrigin = $("#rightHalf", origin.item)[0];
     const bottomOrigin = $("#bottom-div", origin.item)[0];
+    const bottomOneOrigin = $("#bottomToTop1", origin.item)[0];
+    const bottomTwoOrigin = $("#bottomToTop2", origin.item)[0];
+    const bottomRowOrigin = $("#section4Row", origin.item)[0];
     const leftHalfDestination = $("#leftHalf", destination.item)[0];
     const rightHalfDestination = $("#rightHalf", destination.item)[0];
     const bottomDestination = $("#bottom-div", destination.item)[0];
+    const bottomOneDestination = $("#bottomToTop1", destination.item)[0];
+    const bottomTwoDestination = $("#bottomToTop2", destination.item)[0];
+    const bottomRowDestination = $("#section4Row", destination.item)[0];
 
     var duration = scrollingSpeed / 1000 / 2;
     var tl = gsap.timeline();
@@ -128,6 +134,18 @@ new fullpage("#fullpage", {
     var tb = gsap.timeline();
     tb.fromTo(bottomOrigin, { opacity: 1 }, { y:"-100", opacity: 0, duration: duration});
     tb.fromTo(bottomDestination, { y: "500", opacity: 0 }, { y: "0", opacity: 1, duration: duration });
+    
+    var bt = gsap.timeline();
+    bt.fromTo(bottomOneOrigin, { opacity: 1 }, { y:"-100", opacity: 0, duration: duration});
+    bt.fromTo(bottomOneDestination, { y: "400", opacity: 0 }, { y: "0", opacity: 1, duration: duration });
+    
+    var btTwo = gsap.timeline();
+    btTwo.fromTo(bottomTwoOrigin, { opacity: 1 }, { y:"-100", opacity: 0, duration: duration});
+    btTwo.fromTo(bottomTwoDestination, { y: "500", opacity: 0 }, { y: "0", opacity: 1, duration: duration });
+
+    var btRow = gsap.timeline();
+    btRow.fromTo(bottomRowOrigin, { opacity: 1 }, { y:"-100", opacity: 0, duration: duration});
+    btRow.fromTo(bottomRowDestination, { y: "200", opacity: 0 }, { y: "0", opacity: 1, duration: duration });
 
     // content animation ends here
 
