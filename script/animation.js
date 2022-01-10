@@ -158,3 +158,22 @@ new fullpage("#fullpage", {
 
   },
 });
+
+
+
+
+// //  text animation line by line
+// var text = document.querySelectorAll('.txt-animation1 > *')
+// var tl = gsap.timeline().to('.txt-animation1', { width: "auto", height: "auto" })
+//     .fromTo(text, { x: " 50vw" }, { x: 0, stagger: .1 })
+// ScrollTrigger.create({
+//     trigger: '.section1',
+//     animation: tl,
+//     // pin: true,
+//     start: 'top center',
+//     // start: 'top bottom',
+
+//     end: '+=1000 bottom',
+//     scrub: true, // I like the 1 sec delay, set to true for exact anime on scroll
+//     markers: false,
+// })
