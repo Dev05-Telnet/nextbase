@@ -8,8 +8,7 @@ const getImageUrl = (section, index) => {
   if (section > 4) section = section - 1
 
   return `./assets/images/Sequence_${section.toString().padStart(2, "0")}/sh_${section
-    .toString()
-    .padStart(2, "0")}0.${index.toString().padStart(5, "0")}.png`;
+    .toString().padStart(2, "0")}0.${index.toString().padStart(5, "0")}.png`;
 }
 
 
