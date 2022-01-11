@@ -156,8 +156,7 @@ color: #fff;
 .section3Card{
   word-break: break-word;
   width: 100%;
-  /* background-image: url("/assets/pictures/card.png"); */
-  background-color: #000;
+  background-color: #141414;
   border-radius: 25px;
   padding: 15px;
 }
