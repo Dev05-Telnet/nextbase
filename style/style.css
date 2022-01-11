@@ -25,6 +25,9 @@ body {
     font-size: 5em;
     color: white;
     display: flex;
+    margin-right: 0;
+    margin-left: 0;
+    max-width: 100% !important;  
   }
   
   .w-half {
@@ -68,12 +71,7 @@ body {
   width: 100%;
   aspect-ratio: 1920 / 1080;
 } */
-.row{
-  margin-right: 0;
-  margin-left: 0;
-  max-width: 100% !important;
 
-}
 .section1ColumnRight{
   padding-left: 10px;
 }

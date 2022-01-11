@@ -127,12 +127,12 @@ new fullpage("#fullpage", {
 
     var duration = scrollingSpeed / 1000 / 2;
     var tl = gsap.timeline();
-    tl.fromTo(rightHalfOrigin, { opacity: 1 }, { x: "100", opacity: 0, duration: duration });
-    tl.fromTo(rightHalfDestination, { x: "100", opacity: 0 }, { x: "0", opacity: 1, duration: duration });
+    tl.fromTo(rightHalfOrigin, { opacity: 1 }, { x: "20vw", opacity: 0, duration: duration });
+    tl.fromTo(rightHalfDestination, { x: "20vw", opacity: 0 }, { x: "0", opacity: 1, duration: duration });
 
     var tr = gsap.timeline();
-    tr.fromTo(leftHalfOrigin, { opacity: 1 }, { x: "-100", opacity: 0, duration: duration });
-    tr.fromTo(leftHalfDestination, { x: "-100", opacity: 0 }, { x: "0", opacity: 1, duration: duration });
+    tr.fromTo(leftHalfOrigin, { opacity: 1 }, { x: "-20vw", opacity: 0, duration: duration });
+    tr.fromTo(leftHalfDestination, { x: "-20vw", opacity: 0 }, { x: "0", opacity: 1, duration: duration });
     
     var tb = gsap.timeline();
     tb.fromTo(bottomOrigin, { opacity: 1 }, { y:"-100", opacity: 0, duration: duration});
@@ -177,3 +177,4 @@ new fullpage("#fullpage", {
 //     scrub: true, // I like the 1 sec delay, set to true for exact anime on scroll
 //     markers: false,
 // })
+
