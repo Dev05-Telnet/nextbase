@@ -51,7 +51,7 @@ const updateCanvas = () => {
   canvas.height = isMobile ? width : width * (9 / 16);
   context.drawImage(img, 0, 0, canvas.width, canvas.height);
   if (isMobile) {
-    canvas.style.marginTop = "50%";
+    canvas.style.marginTop = "80%";
   } else {
     const availablePadding = window.innerHeight - canvas.height
     canvas.style.marginTop = (availablePadding / 2) + "px";

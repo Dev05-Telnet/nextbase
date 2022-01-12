@@ -193,6 +193,9 @@ color: #fff;
   margin-left: 1%;
   color: #fff; 
 }
+.section1Row, .section3row, .section5Row{
+  flex-direction: row-reverse !important;
+}
 
 /* Media screen styles for mobile screen */
 @media only screen and (max-width: 540px) {
@@ -203,8 +206,17 @@ color: #fff;
 .section1-text{
   margin-left: 0px;
 }
+.section2ColumnLeft{
+  margin-left: 0px;
+}
+.cardContent{
+  font-size: 25px;
+}
 .section1Row, h1{
   line-height: 1 !important;
+}
+.section3Card .section4Card .section5Card{
+  width: 100%;
 }
 } 
 
@@ -303,6 +315,7 @@ color: #fff;
 
 .shimmer {
   text-align: center;
+  word-break: break-word;
   color: rgba(255, 255, 255, 0.1);
   background: -webkit-gradient(linear,left top,right top,from(#222),to(#222),color-stop(0.5, #fff));
   background: -moz-gradient(linear,left top,right top,from(#222),to(#222),color-stop(0.5, #fff));
