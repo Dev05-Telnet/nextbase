@@ -166,3 +166,18 @@ color: #fff;
 font-weight: 100;
 color: #fff;
 }
+
+
+/* Media screen styles for mobile screen */
+@media only screen and (max-width: 540px) {
+.row{
+   display: grid;
+   height: 100%;
+}
+.section1-text{
+  margin-left: 0px;
+}
+.section1Row, h1{
+  line-height: 1 !important;
+}
+} 
