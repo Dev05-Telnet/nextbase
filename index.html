@@ -15,19 +15,14 @@
 <body>
     <div id="fullpage">
         <div class="section what " id="section0">
-            <div class="row section0Row">
-                <div class="large-6 medium-6 columns w-half " id="leftHalf">
-                </div>
-                <div class="large-6 medium-6 columns w-half " id="rightHalf">
-                </div>
+            <div class="firstsection">
+                <div class="shimmer intro">Scroll Down <br>experiance the <br> Dashcam 622w</div>
+                <div class="arrow bounce"></div>
             </div>
         </div>
         <div class="section" id="section1">
             <div class="row section1Row">
                 <div class="large-6 medium-6 columns w-half section1ColumnLeft" id="leftHalf">
-                    <!-- <h1 class="section1-text">
-                        All eyes <br> on the <br> road
-                    </h1> -->
                 </div>
                 <div class="large-6 medium-6 columns w-half section1ColumnRight" id="rightHalf"
                     style="font-size: 5rem; text-align: left;">
@@ -66,37 +61,40 @@
         </div>
         <div class="section" id="section3">
             <div class="row section3row">
-                <div class="large-2 medium-1 columns w-half section3ColumnLeft" id="">
+                <div class="large-2 medium-1 columns section3Sides w-half section3ColumnLeft" id="">
                 </div>
                 <div class="large-6 medium-5 columns w-half section3ColumnLeft" id="bottomToTop1">
                     <img class="imageCard" src="./assets/pictures/image-card2.png" alt="">
                 </div>
-                <!-- <div class="large-6 medium-5 columns w-half section3ColumnRight" id="bottomToTop2">
-                    <img class="imageCard" src="./assets/pictures/card-nodata.png" alt="">
-                </div> -->
-                <div class="section3Card">
+                <div class="section3Card" id="bottomToTop2">
                     <h4 class="section3CardHead">
                         No data, no problem
                     </h4>
                     <p class="section3CardContent">
-                        Embedded precision location technology means
+                        Embedded precision location technology means <br>
                         emergency services can find you to within 3m ,
-                        anywhere on Earth. Your
+                        anywhere <br> on Earth. Your
                         location: always known and easy to share.
                     </p>
                 </div>
-
-                <div class="large-2 medium-1 columns w-half section3ColumnLeft" id="bottomToTop1">
+                <div class="large-2 medium-1 section3Sides columns w-half" id="">
                 </div>
             </div>
         </div>
-
         <div class="section" id="section4">
             <div class="row section4Row" id="bottomToTop1">
                 <div class="large-2 medium-1 columns w-half section3ColumnLeft" id="">
                 </div>
-                <div class="large-6 medium-6 columns w-half section4Column" id="">
-                    <img class="imageCard" src="./assets/pictures/Info-card2.png" alt="">
+                <div class="section4Card" id="bottomToTop2">
+                    <div class="icon-div">
+                        <img class="icon1" src="./assets/icons/SOS icon.png" alt="">
+                        <p class="section4CardTiltle">Emergency SOS response</p>
+                    </div>
+                    <h2 class="section4CardHead">An ally in an accident</h2>
+                    <p class="section4CardContent">
+                        Crash detection feature automatically notifies <br> emergency services if no movement is sensed
+                        <br> after impact. The 622GW has got your back – <br> wherever you are.
+                    </p>
                 </div>
                 <div class="large-6 medium-6 columns w-half section4Column" id="">
                     <img class="imageCard" src="./assets/pictures/Image-card.png" alt="">
@@ -111,8 +109,16 @@
                 </div>
                 <div class="large-6 medium-6 columns w-half section5ColumnLeft" id="">
                 </div>
-                <div class="large-6 medium-6 columns w-half section5ColumnRight" id="bottomToTop2">
-                    <img class="imageRight" src="./assets/pictures/Info-card.png" alt="">
+                <div class="section4Card" id="bottomToTop2">
+                    <div class="icon-div">
+                        <img class="icon1" src="./assets/icons/portal icon.png" alt="">
+                        <p class="section5CardTiltle">National Safety Portal</p>
+                    </div>
+                    <h2 class="section5CardHead">Direct line to justice</h2>
+                    <p class="section5CardContent">
+                        Play your part in making UK roads safer by quickly <br> and easily submitting video footage of
+                        dangerous <br> driving to the police.
+                    </p>
                 </div>
                 <div class="large-2 medium-1 columns w-half section3ColumnLeft" id="">
                 </div>
@@ -125,32 +131,10 @@
             </div>
         </div>
     </div>
-
-    <!-- <div class="fixedWrapper fp-table">
-        <div class="fp-tableCell" style="display: none;">
-            <div class="row">
-                <div class="w-half" id="leftHalf">
-                    this is left
-                </div>
-                <div class="w-half" id="rightHalf">
-                    All eyes on the road
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-    <!-- <div class="fixedWrapper fp-table">
-        <div class="fp-tableCell">
-            <canvas id="anican">
-            </canvas>
-        </div>
-    </div> -->
-
     <div class="fixedWrapper">
         <canvas id="anican">
         </canvas>
     </div>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"
         integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg=="
@@ -161,15 +145,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.extensions.min.js"
         integrity="sha512-0xW5KFMtT462F65vVvIejNawM1U2Fp/yhItmQVFUwdYP+R9tQFCn4QtLEhkp6RoGovZ6YCvbxy+GVCtGv0+nvA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
-        integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
-        integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
-    <!-- <script type="text/javascript" src="./script/fullpage.js"></script> -->
     <script type="text/javascript" src="./script/animation.js"></script>
-
-
-
 </body>
 
 </html>

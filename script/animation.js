@@ -40,7 +40,6 @@ const canvas = $("#anican")[0];
 const context = canvas.getContext("2d");
 const img = new Image();
 
-
 /*
  * Update the canvas
  */
@@ -51,7 +50,6 @@ const updateCanvas = () => {
   canvas.width = width;
   canvas.height = isMobile ? width : width * (9 / 16);
   context.drawImage(img, 0, 0, canvas.width, canvas.height);
-
   if (isMobile) {
     canvas.style.marginTop = "50%";
   } else {
@@ -59,16 +57,12 @@ const updateCanvas = () => {
     canvas.style.marginTop = (availablePadding / 2) + "px";
     canvas.style.marginBottom = (availablePadding / 2) + "px";
   }
-
 }
-
 updateCanvas()
-
 img.onload = function () {
   context.clearRect(0, 0, canvas.width, canvas.height);
   context.drawImage(img, 0, 0, canvas.width, canvas.height);
 };
-
 var scrollingSpeed = 2500;
 
 /*
@@ -94,7 +88,6 @@ function animateInterSection(originIndex, destinationIndex, direction) {
       imagesList.push(getImageUrl(destinationIndex, i));
     }
   }
-
   var index = 0;
   var interval = setInterval(function () {
     index++;
@@ -105,13 +98,11 @@ function animateInterSection(originIndex, destinationIndex, direction) {
     }
   }, scrollingSpeed / 30);
 }
-
 /*
  * Initialize the fullPage plugin
  */
 new fullpage("#fullpage", {
   touchWrapper: document,
-  // sectionsColor: [ 'red', 'blue', 'green', 'cyan', 'magenta',],
   scrollingSpeed: scrollingSpeed,
   easingcss3: "steps(2, jump-none)",
   onLeave: (origin, destination, direction) => {
@@ -123,18 +114,22 @@ new fullpage("#fullpage", {
     const bottomOrigin = $("#bottom-div", origin.item)[0];
     const bottomOneOrigin = $("#bottomToTop1", origin.item)[0];
     const bottomTwoOrigin = $("#bottomToTop2", origin.item)[0];
-    // const bottomRowOrigin = $("#section4Row", origin.item)[0];
-    // const bottomThreeOrigin = $("#bottomToTop3", origin.item)[0];
-
     const leftHalfDestination = $("#leftHalf", destination.item)[0];
     const rightHalfDestination = $("#rightHalf", destination.item)[0];
     const bottomDestination = $("#bottom-div", destination.item)[0];
     const bottomOneDestination = $("#bottomToTop1", destination.item)[0];
     const bottomTwoDestination = $("#bottomToTop2", destination.item)[0];
-    // const bottomRowDestination = $("#section4Row", destination.item)[0];
-    // const bottomThreeDestination = $("#bottomToTop3", destination.item)[0];
 
     var duration = scrollingSpeed / 1000 / 2;
+// animate the first section
+if(origin.isFirst){
+  gsap.timeline().fromTo(origin.item, {y:"0"}, {y:"-100vh",opacity: 1, duration: duration});
+}else if(destination.isFirst){
+  gsap.timeline().fromTo(destination.item, {y:"-100vh",opacity: 0}, {y:"0",opacity: 1, duration: duration*2});
+}
+// end of first section
+
+
     var tl = gsap.timeline();
     tl.fromTo(rightHalfOrigin, { opacity: 1 }, { x: "20vw", opacity: 0, duration: duration });
     tl.fromTo(rightHalfDestination, { x: "20vw", opacity: 0 }, { x: "0", opacity: 1, duration: duration });
@@ -154,36 +149,7 @@ new fullpage("#fullpage", {
     var btTwo = gsap.timeline();
     btTwo.fromTo(bottomTwoOrigin, { opacity: 1 }, { y: "-100", opacity: 0, duration: duration });
     btTwo.fromTo(bottomTwoDestination, { y: "500", opacity: 0 }, { y: "0", opacity: 1, duration: duration });
-
-    // var btRow = gsap.timeline();
-    // btRow.fromTo(bottomRowOrigin, { opacity: 1 }, { y:"-100", opacity: 0, duration: duration});
-    // btRow.fromTo(bottomRowDestination, { y: "200", opacity: 0 }, { y: "0", opacity: 1, duration: duration });
-
-    // var btThree = gsap.timeline();
-    // btThree.fromTo(bottomThreeOrigin, { opacity: 1 }, { y:"-100", opacity: 0, duration: duration});
-    // btThree.fromTo(bottomThreeDestination, { y: "200", opacity: 0 }, { y: "0", opacity: 1, duration: duration });
-
     // content animation ends here
 
   },
 });
-
-
-
-
-// //  text animation line by line
-// var text = document.querySelectorAll('.txt-animation1 > *')
-// var tl = gsap.timeline().to('.txt-animation1', { width: "auto", height: "auto" })
-//     .fromTo(text, { x: " 50vw" }, { x: 0, stagger: .1 })
-// ScrollTrigger.create({
-//     trigger: '.section1',
-//     animation: tl,
-//     // pin: true,
-//     start: 'top center',
-//     // start: 'top bottom',
-
-//     end: '+=1000 bottom',
-//     scrub: true, // I like the 1 sec delay, set to true for exact anime on scroll
-//     markers: false,
-// })
-
