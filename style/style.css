@@ -206,6 +206,16 @@ color: #fff;
 .section1-text{
   margin-left: 0px;
 }
+.bottom-div{
+  margin-top: -50% !important;
+  margin-bottom: 15% !important;
+}
+.bottom-text{
+  font-size: 30px;
+}
+.section2ColumnLeft{
+  margin-top: 10%;
+}
 .section2ColumnLeft{
   margin-left: 0px;
 }
@@ -217,6 +227,22 @@ color: #fff;
 }
 .section3Card .section4Card .section5Card{
   width: 100%;
+}
+.section3Card{
+  /* padding:20%; */
+  word-break: break-word;
+  /* width: 50%; */
+  background-color: #141414;
+  border-radius: 50px;
+  padding: 15px;
+  /* padding-top: 75px; */
+  /* padding-left:30px; */
+  text-align:left;
+}
+.section3CardHead{
+  padding-bottom: 20px;
+font-weight: 100;
+color: #fff;
 }
 } 
 
