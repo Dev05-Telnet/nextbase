@@ -225,24 +225,39 @@ color: #fff;
 .section1Row, h1{
   line-height: 1 !important;
 }
-.section3Card .section4Card .section5Card{
-  width: 100%;
-}
-.section3Card{
-  /* padding:20%; */
+/* .section3Card .section4Card .section5Card{
+  width: 90%;
+} */
+/* .section3Card{
   word-break: break-word;
-  /* width: 50%; */
+  width: 90%;
+  height: 80%;
   background-color: #141414;
   border-radius: 50px;
   padding: 15px;
-  /* padding-top: 75px; */
-  /* padding-left:30px; */
   text-align:left;
+} */
+.small-12 {
+  position: relative;
+  width: 90% !important;
+  height: 80% !important;
+  margin-left: 5% !important;
 }
-.section3CardHead{
-  padding-bottom: 20px;
-font-weight: 100;
-color: #fff;
+.section3CardContent, 
+.section3CardHead, 
+.icon-div, 
+.section4CardHead, 
+.section4CardContent, 
+.section5CardTiltle, 
+.section5CardHead, 
+.section5CardContent{
+  padding-left: 10px;
+}
+/* .section3CardHead {
+  padding-left: 10px;
+} */
+.imageCard {
+  margin-top: 40px;
 }
 } 
 
