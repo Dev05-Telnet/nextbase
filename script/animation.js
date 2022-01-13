@@ -21,12 +21,12 @@ const getImageUrl = (section, index) => {
 
 
 // Preload the images
-// for (let s = 1; s <= 5; s++) {
-//   for (let i = 1; i <= 30; i++) {
-//     const img = new Image();
-//     img.src = getImageUrl(s, i);
-//   }
-// }
+for (let s = 1; s <= 5; s++) {
+  for (let i = 1; i <= 30; i++) {
+    const img = new Image();
+    img.src = getImageUrl(s, i);
+  }
+}
 
 /*
  * Initialize some useful methods from fullpage plugin
