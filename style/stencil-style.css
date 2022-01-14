@@ -16,7 +16,13 @@ body {
     vertical-align: middle;
     width: 100%;
   }
-  .row {
+  .section1Row,
+   .section2Row1,
+   .section2Row2,
+   .section3row,
+   .section4Row,
+   .section5Row,
+   .bottom-div{
     font-family: "Source Sans Pro", sans-serif;
     font-size: 5em;
     color: white;
