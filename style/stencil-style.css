@@ -205,7 +205,13 @@ color: #fff;
 
 /* Media screen styles for mobile screen */
 @media only screen and (max-width: 540px) {
-.row{
+  .section1Row,
+  .section2Row1,
+  .section2Row2,
+  .section3row,
+  .section4Row,
+  .section5Row,
+  .bottom-div{
    display: grid;
    height: 100%;
 }
