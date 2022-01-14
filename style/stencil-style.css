@@ -206,7 +206,6 @@ color: #fff;
 /* Media screen styles for mobile screen */
 @media only screen and (max-width: 540px) {
   .fixedWrapper {
-    /* z-index: -1; */
     position: fixed;
     /* top: 0; */
     bottom: 0;
