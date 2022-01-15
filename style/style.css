@@ -203,6 +203,10 @@ color: #fff;
    display: grid;
    height: 100%;
 }
+.section3ColumnLeft{
+  position: fixed;
+  bottom: 0px;
+}
 .section1-text{
   margin-left: 0px;
 }
