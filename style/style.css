@@ -408,3 +408,20 @@ color: #fff;
     background-position: top right;
   }
 }
+
+
+
+
+/* Section 6 styles */
+.section6Row1{
+  width: 100% !important;
+  display: flex;
+}
+.section6Tiltle{
+  padding-bottom: 10px;
+  font-size: 1.7rem;
+  color: #fff;
+  font-weight: 500;
+  margin-top: 5px !important;
+  margin-left: 3%;
+}
