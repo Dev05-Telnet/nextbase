@@ -27,7 +27,7 @@ for (let s = 1; s <= 10; s++) {
     img.src = getImageUrl(s, i);
   }
 }
-
+  
 /*
  * Initialize some useful methods from fullpage plugin
  */
