@@ -298,3 +298,17 @@ color: #fff;
   margin-top: 5px !important;
   margin-left: 3%;
 }
+/* section 10 */
+
+.section10Head{
+margin-left: 0;
+margin-right: 0;
+text-align: center;
+}
+.section10Column2{
+  display: flex;
+}
+.section10iconImg{
+  width: 40px;
+  height: 40px;
+}
