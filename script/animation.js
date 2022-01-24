@@ -12,21 +12,20 @@ var isMobile = window.innerWidth < 540;
 
 // get image url for the section with frame index
 const getImageUrl = (section, index) => {
-  if (section == 4) return `https://ayatacommerce-ecommerce.github.io/nextbase/assets/images/${isMobile ? 'Mobile/':''}Sequence_01/sh_010${isMobile ? '_m':''}.00001.png`;
+  if (section == 4) return `https://store-o257sk57z9.mybigcommerce.com/content/Animation622/assets/images/${isMobile ? 'Mobile/':''}Sequence_01/sh_010${isMobile ? '_m':''}.00001.png`;
   if (section > 4) section = section - 1
 
-  return `https://ayatacommerce-ecommerce.github.io/nextbase/assets/images/${isMobile ? 'Mobile/':''}Sequence_${section.toString().padStart(2, "0")}/sh_${section
+  return `https://store-o257sk57z9.mybigcommerce.com/content/Animation622/assets/images/${isMobile ? 'Mobile/':''}Sequence_${section.toString().padStart(2, "0")}/sh_${section
     .toString().padStart(2, "0")}0${isMobile ? '_m':''}.${index.toString().padStart(5, "0")}.png`;
 }
 
 
 // Preload the images 
-for (let s = 1; s <= 3; s++) {
+for (let s = 1; s <= 12; s++) {
   for (let i = 1; i <= 30; i++) {
     const img = new Image();
     img.src = getImageUrl(s, i);
   }
-  console.log('image preloaded',s)
 }
   
 /*
