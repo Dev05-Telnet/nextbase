@@ -184,6 +184,5 @@ new fullpage("#fullpage", {
     // btTwo.fromTo(bottomTwoOrigin, { opacity: 1 }, { y: "-100", opacity: 0, duration: duration });
     // btTwo.fromTo(bottomTwoDestination, { y: "500", opacity: 0 }, { y: "0", opacity: 1, duration: duration });
     // // content animation ends here
-console.log('scolled')
   },
 });
