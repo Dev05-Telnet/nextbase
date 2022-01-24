@@ -12,7 +12,7 @@ var isMobile = window.innerWidth < 540;
 
 // get image url for the section with frame index
 const getImageUrl = (section, index) => {
-  if (section == 4) return `https://ayatacommerce-ecommerce.github.io/nextbase/assets/images/${isMobile ? 'Mobile/':''}Sequence_01/sh_010${isMobile ? '_m':''}.00001.png`;
+  if (section <= 0 || section == 4) return `https://ayatacommerce-ecommerce.github.io/nextbase/assets/images/${isMobile ? 'Mobile/':''}Sequence_01/sh_010${isMobile ? '_m':''}.00001.png`;
   if (section > 4) section = section - 1
 
   return `https://ayatacommerce-ecommerce.github.io/nextbase/assets/images/${isMobile ? 'Mobile/':''}Sequence_${section.toString().padStart(2, "0")}/sh_${section
@@ -109,7 +109,7 @@ new fullpage("#fullpage", {
   // sectionsColor: [ 'red', 'blue', 'green', 'cyan', 'magenta','yellow','pink','red', 'blue', 'green', 'cyan', 'magenta',],
   scrollingSpeed: scrollingSpeed,
   // easings:["steps(2, jump-none)","steps(2, jump-none)","ease","linear"],
-  // easingcss3: "steps(2, jump-none)",
+  easingcss3: "steps(2, jump-none)",
 
   // first section auto page load animation
   afterLoad:(activeSection,element,direction)=>{
@@ -131,10 +131,7 @@ new fullpage("#fullpage", {
         // why 60
         // 
       }, scrollingSpeed / 30);
-    
-      // console.log('print ones');
     }
-    // console.log('afterload works',direction)
   },
 
   onLeave: (origin, destination, direction) => {
