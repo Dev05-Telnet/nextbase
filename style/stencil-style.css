@@ -2,10 +2,10 @@ body {
     margin: 0px;
     background-color: #000 !important;
   }
-  .section{
+  /* .section{
       height: 80vh;
       width: 50%;
-  }
+  } */
   .fp-table {
     display: table;
     table-layout: fixed;

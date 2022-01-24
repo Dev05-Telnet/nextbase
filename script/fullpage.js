@@ -138,7 +138,7 @@
         scrollHorizontally: false,
         interlockedSlides: false,
         dragAndMove: false,
-        offsetSections: false,
+        offsetSections: true,
         resetSliders: false,
         fadingEffect: false,
         normalScrollElements: null,
@@ -199,7 +199,6 @@
         afterSlideLoad: null,
         onSlideLeave: null,
         afterResponsive: null,
-
         lazyLoading: true,
       },
       options
@@ -536,11 +535,11 @@
         //adjusting the height of the table-cell for IE and Firefox
         if (options.verticalCentered) {
           css($(TABLE_CELL_SEL, section), {
-            height: getTableHeight(section) + "px",
+            // height: getTableHeight(section) + "px",
           });
         }
 
-        css(section, { height: windowsHeight + "px" });
+        //css(section, { height: getTableHeight + "px" });
 
         //adjusting the position fo the FULL WIDTH slides...
         if (slides.length > 1) {
@@ -1052,7 +1051,7 @@
       }
       startingSection = $(SECTION_ACTIVE_SEL)[0];
 
-      css(section, { height: windowsHeight + "px" });
+      //css(section, { height: getTableHeight + "px" });
 
       if (options.paddingTop) {
         css(section, { "padding-top": options.paddingTop });
@@ -3074,8 +3073,8 @@
       if (!hasClass(element, TABLE)) {
         var wrapper = document.createElement("div");
         wrapper.className = TABLE_CELL;
-        wrapper.style.height = getTableHeight(element) + "px";
-        console.log("the height is ", wrapper.style.height);
+        // wrapper.style.height = getTableHeight(element) + "px";
+        // console.log("the height is ", wrapper.style.height);
 
         addClass(element, TABLE);
         wrapInner(element, wrapper);
@@ -3094,7 +3093,7 @@
         var paddings =
           parseInt(getComputedStyle(section)["padding-top"]) +
           parseInt(getComputedStyle(section)["padding-bottom"]);
-        console.log("what is the paddings", paddings);
+        // console.log("what is the paddings", paddings);
         sectionHeight = windowsHeight - paddings;
       }
 
