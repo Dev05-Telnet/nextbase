@@ -107,7 +107,7 @@ function animateInterSection(originIndex, destinationIndex, direction) {
 new fullpage("#fullpage", {
   touchWrapper: document,
 
-  // sectionsColor: [ 'red', 'blue', 'green', 'cyan', 'magenta','yellow','pink','red', 'blue', 'green', 'cyan', 'magenta',],
+  sectionsColor: [ 'red', 'blue', 'green', 'cyan', 'magenta','yellow','pink','red', 'blue', 'green', 'cyan', 'magenta',],
   scrollingSpeed: scrollingSpeed,
   offsetSections: true,
   easings:["steps(2, jump-none)","steps(2, jump-none)","ease","linear"],
