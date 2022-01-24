@@ -23,7 +23,6 @@ body {
    .section4Row,
    .section5Row,
    .bottom-div{
-    font-family: "Source Sans Pro", sans-serif;
     font-size: 5em;
     color: white;
     display: flex;
@@ -351,12 +350,10 @@ color: #fff;
 
 .firstsection {
   text-align: center;
-  font-family: "Source Sans Pro", sans-serif;
   font-size: 5em;
 }
 
 .intro {
-  font-family: "Lato";
   font-weight: 300;
   margin: 0 auto;
   padding: 0 10px;
