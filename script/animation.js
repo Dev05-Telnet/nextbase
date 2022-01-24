@@ -4,12 +4,6 @@
 */
 var isMobile = window.innerWidth < 540;
 
-/*
- * Preload all images
-    <script src="https://ayatacommerce-ecommerce.github.io/nextbase/script/animation.js"></script>
-*
- */
-
 // get image url for the section with frame index
 const getImageUrl = (section, index) => {
   if (section <= 0 || section == 4) return `https://ayatacommerce-ecommerce.github.io/nextbase/assets/images/${isMobile ? 'Mobile/':''}Sequence_01/sh_010${isMobile ? '_m':''}.00001.png`;
@@ -19,15 +13,14 @@ const getImageUrl = (section, index) => {
     .toString().padStart(2, "0")}0${isMobile ? '_m':''}.${index.toString().padStart(5, "0")}.png`;
 }
 
-
 // Preload the images 
-for (let s = 1; s <= 12; s++) {
+for (let s = 0; s <= 12; s++) {
   for (let i = 1; i <= 30; i++) {
     const img = new Image();
     img.src = getImageUrl(s, i);
   }
 }
-  
+
 /*
  * Initialize some useful methods from fullpage plugin
  */
@@ -127,16 +120,14 @@ new fullpage("#fullpage", {
         } else if (index > 15) {
           clearInterval(interval);
         }
-        index++;
-        // why 60
-        // 
+        index++; 
       }, scrollingSpeed / 30);
     }
   },
 
+//  images from 1 to last exclude after load start here
   onLeave: (origin, destination, direction) => {
     //animateInterSection(0, 1, direction);
-    //animateInterSection(1, 2, direction);
 
     animateInterSection(origin.index+1, destination.index+1, direction);
     // Animate the content
@@ -152,14 +143,6 @@ new fullpage("#fullpage", {
     const bottomTwoDestination = $("#bottomToTop2", destination.item)[0];
 
     var duration = scrollingSpeed / 1000 / 2;
-// animate the first section
-// if(origin.isFirst){
-//   gsap.timeline().fromTo(origin.item, {y:"0"}, {y:"-100vh",opacity: 1, duration: duration});
-// }else if(destination.isFirst){
-//   gsap.timeline().fromTo(destination.item, {y:"-100vh",opacity: 0}, {y:"0",opacity: 1, duration: duration*2});
-// }
-// end of first section
-
 
     var tl = gsap.timeline();
     tl.fromTo(rightHalfOrigin, { opacity: 1 }, { x: "20vw", opacity: 0, duration: duration });
@@ -180,6 +163,5 @@ new fullpage("#fullpage", {
     var btTwo = gsap.timeline();
     btTwo.fromTo(bottomTwoOrigin, { opacity: 1 }, { y: "-100", opacity: 0, duration: duration });
     btTwo.fromTo(bottomTwoDestination, { y: "500", opacity: 0 }, { y: "0", opacity: 1, duration: duration });
-    // // content animation ends here
   },
 });
