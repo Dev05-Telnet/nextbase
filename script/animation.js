@@ -142,14 +142,14 @@ new fullpage("#fullpage", {
     // Animate the content
     const leftHalfOrigin = $("#leftHalf", origin.item)[0];
     const rightHalfOrigin = $("#rightHalf", origin.item)[0];
-    // const bottomOrigin = $("#bottom-div", origin.item)[0];
-    // const bottomOneOrigin = $("#bottomToTop1", origin.item)[0];
-    // const bottomTwoOrigin = $("#bottomToTop2", origin.item)[0];
+    const bottomOrigin = $("#bottom-div", origin.item)[0];
+    const bottomOneOrigin = $("#bottomToTop1", origin.item)[0];
+    const bottomTwoOrigin = $("#bottomToTop2", origin.item)[0];
     const leftHalfDestination = $("#leftHalf", destination.item)[0];
     const rightHalfDestination = $("#rightHalf", destination.item)[0];
-    // const bottomDestination = $("#bottom-div", destination.item)[0];
-    // const bottomOneDestination = $("#bottomToTop1", destination.item)[0];
-    // const bottomTwoDestination = $("#bottomToTop2", destination.item)[0];
+    const bottomDestination = $("#bottom-div", destination.item)[0];
+    const bottomOneDestination = $("#bottomToTop1", destination.item)[0];
+    const bottomTwoDestination = $("#bottomToTop2", destination.item)[0];
 
     var duration = scrollingSpeed / 1000 / 2;
 // animate the first section
@@ -169,17 +169,17 @@ new fullpage("#fullpage", {
     tr.fromTo(leftHalfOrigin, { opacity: 1 }, { x: "-20vw", opacity: 0, duration: duration });
     tr.fromTo(leftHalfDestination, { x: "-20vw", opacity: 0 }, { x: "0", opacity: 1, duration: duration });
 
-    // var tb = gsap.timeline();
-    // tb.fromTo(bottomOrigin, { opacity: 1 }, { y: "-100", opacity: 0, duration: duration });
-    // tb.fromTo(bottomDestination, { y: "500", opacity: 0 }, { y: "0", opacity: 1, duration: duration });
+    var tb = gsap.timeline();
+    tb.fromTo(bottomOrigin, { opacity: 1 }, { y: "-100", opacity: 0, duration: duration });
+    tb.fromTo(bottomDestination, { y: "500", opacity: 0 }, { y: "0", opacity: 1, duration: duration });
 
-    // var bt = gsap.timeline();
-    // bt.fromTo(bottomOneOrigin, { opacity: 1 }, { y: "-100", opacity: 0, duration: duration });
-    // bt.fromTo(bottomOneDestination, { y: "400", opacity: 0 }, { y: "0", opacity: 1, duration: duration });
+    var bt = gsap.timeline();
+    bt.fromTo(bottomOneOrigin, { opacity: 1 }, { y: "-100", opacity: 0, duration: duration });
+    bt.fromTo(bottomOneDestination, { y: "400", opacity: 0 }, { y: "0", opacity: 1, duration: duration });
 
-    // var btTwo = gsap.timeline();
-    // btTwo.fromTo(bottomTwoOrigin, { opacity: 1 }, { y: "-100", opacity: 0, duration: duration });
-    // btTwo.fromTo(bottomTwoDestination, { y: "500", opacity: 0 }, { y: "0", opacity: 1, duration: duration });
+    var btTwo = gsap.timeline();
+    btTwo.fromTo(bottomTwoOrigin, { opacity: 1 }, { y: "-100", opacity: 0, duration: duration });
+    btTwo.fromTo(bottomTwoDestination, { y: "500", opacity: 0 }, { y: "0", opacity: 1, duration: duration });
     // // content animation ends here
   },
 });
