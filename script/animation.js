@@ -12,7 +12,7 @@ var isMobile = window.innerWidth < 540;
 
 // get image url for the section with frame index
 const getImageUrl = (section, index) => {
-  // if (section <= 0 || section == 4) return `https://ayatacommerce-ecommerce.github.io/nextbase/assets/images/${isMobile ? 'Mobile/':''}Sequence_01/sh_010${isMobile ? '_m':''}.00001.png`;
+  if (section <= 0 || section == 4) return `https://ayatacommerce-ecommerce.github.io/nextbase/assets/images/${isMobile ? 'Mobile/':''}Sequence_01/sh_010${isMobile ? '_m':''}.00001.png`;
   if (section > 4) section = section - 1
 
   return `https://ayatacommerce-ecommerce.github.io/nextbase/assets/images/${isMobile ? 'Mobile/':''}Sequence_${section.toString().padStart(2, "0")}/sh_${section
@@ -26,6 +26,7 @@ for (let s = 1; s <= 3; s++) {
     const img = new Image();
     img.src = getImageUrl(s, i);
   }
+  console.log('image preloaded',s)
 }
   
 /*
@@ -106,13 +107,11 @@ function animateInterSection(originIndex, destinationIndex, direction) {
  */
 new fullpage("#fullpage", {
   touchWrapper: document,
-
   sectionsColor: [ 'red', 'blue', 'green', 'cyan', 'magenta','yellow','pink','red', 'blue', 'green', 'cyan', 'magenta',],
   scrollingSpeed: scrollingSpeed,
   offsetSections: true,
-  easings:["steps(2, jump-none)","steps(2, jump-none)","ease","linear"],
+  // easings:["steps(2, jump-none)","steps(2, jump-none)","ease","linear"],
   // easingcss3: "steps(2, jump-none)",
-  
 
   // first section auto page load animation
   afterLoad:(activeSection,element,direction)=>{
