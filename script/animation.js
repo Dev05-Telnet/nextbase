@@ -6,11 +6,16 @@ var isMobile = window.innerWidth < 540;
 
 // get image url for the section with frame index
 const getImageUrl = (section, index) => {
-  if (section <= 0 || section == 4) return `https://ayatacommerce-ecommerce.github.io/nextbase/assets/images/${isMobile ? 'Mobile/':''}Sequence_01/sh_010${isMobile ? '_m':''}.00001.png`;
+  console.log('incoming section ', section)
+  if (section <= 0 || section == 4 || section == 10 || section == 12 ) return `https://ayatacommerce-ecommerce.github.io/nextbase/assets/images/${isMobile ? 'Mobile/':''}Sequence_01/sh_010${isMobile ? '_m':''}.00001.png`;
   if (section > 4) section = section - 1
+  if (section >= 10) section = section -1
 
+  console.log('outgoing section', section)
   return `https://ayatacommerce-ecommerce.github.io/nextbase/assets/images/${isMobile ? 'Mobile/':''}Sequence_${section.toString().padStart(2, "0")}/sh_${section
     .toString().padStart(2, "0")}0${isMobile ? '_m':''}.${index.toString().padStart(5, "0")}.png`;
+  // return `/assets/images/${isMobile ? 'Mobile/':''}Sequence_${section.toString().padStart(2, "0")}/sh_${section
+  //   .toString().padStart(2, "0")}0${isMobile ? '_m':''}.${index.toString().padStart(5, "0")}.png`;
 }
 
 // Preload the images 
@@ -102,7 +107,7 @@ new fullpage("#fullpage", {
   // sectionsColor: [ 'red', 'blue', 'green', 'cyan', 'magenta','yellow','pink','red', 'blue', 'green', 'cyan', 'magenta',],
   scrollingSpeed: scrollingSpeed,
   // easings:["steps(2, jump-none)","steps(2, jump-none)","ease","linear"],
-  easingcss3: "steps(2, jump-none)",
+  // easingcss3: "steps(2, jump-none)",
 
   // first section auto page load animation
   afterLoad:(activeSection,element,direction)=>{
@@ -139,37 +144,37 @@ new fullpage("#fullpage", {
 
     animateInterSection(origin.index+1, destination.index+1, direction);
     // Animate the content
-    const leftHalfOrigin = $("#leftHalf", origin.item)[0];
-    const rightHalfOrigin = $("#rightHalf", origin.item)[0];
-    const bottomOrigin = $("#bottom-div", origin.item)[0];
-    const bottomOneOrigin = $("#bottomToTop1", origin.item)[0];
-    const bottomTwoOrigin = $("#bottomToTop2", origin.item)[0];
-    const leftHalfDestination = $("#leftHalf", destination.item)[0];
-    const rightHalfDestination = $("#rightHalf", destination.item)[0];
-    const bottomDestination = $("#bottom-div", destination.item)[0];
-    const bottomOneDestination = $("#bottomToTop1", destination.item)[0];
-    const bottomTwoDestination = $("#bottomToTop2", destination.item)[0];
+    // const leftHalfOrigin = $("#leftHalf", origin.item)[0];
+    // const rightHalfOrigin = $("#rightHalf", origin.item)[0];
+    // const bottomOrigin = $("#bottom-div", origin.item)[0];
+    // const bottomOneOrigin = $("#bottomToTop1", origin.item)[0];
+    // const bottomTwoOrigin = $("#bottomToTop2", origin.item)[0];
+    // const leftHalfDestination = $("#leftHalf", destination.item)[0];
+    // const rightHalfDestination = $("#rightHalf", destination.item)[0];
+    // const bottomDestination = $("#bottom-div", destination.item)[0];
+    // const bottomOneDestination = $("#bottomToTop1", destination.item)[0];
+    // const bottomTwoDestination = $("#bottomToTop2", destination.item)[0];
 
-    var duration = scrollingSpeed / 1000 / 2;
+    // var duration = scrollingSpeed / 1000 / 2;
 
-    var tl = gsap.timeline();
-    tl.fromTo(rightHalfOrigin, { opacity: 1 }, { x: "20vw", opacity: 0, duration: duration });
-    tl.fromTo(rightHalfDestination, { x: "20vw", opacity: 0 }, { x: "0", opacity: 1, duration: duration });
+    // var tl = gsap.timeline();
+    // tl.fromTo(rightHalfOrigin, { opacity: 1 }, { x: "20vw", opacity: 0, duration: duration });
+    // tl.fromTo(rightHalfDestination, { x: "20vw", opacity: 0 }, { x: "0", opacity: 1, duration: duration });
 
-    var tr = gsap.timeline();
-    tr.fromTo(leftHalfOrigin, { opacity: 1 }, { x: "-20vw", opacity: 0, duration: duration });
-    tr.fromTo(leftHalfDestination, { x: "-20vw", opacity: 0 }, { x: "0", opacity: 1, duration: duration });
+    // var tr = gsap.timeline();
+    // tr.fromTo(leftHalfOrigin, { opacity: 1 }, { x: "-20vw", opacity: 0, duration: duration });
+    // tr.fromTo(leftHalfDestination, { x: "-20vw", opacity: 0 }, { x: "0", opacity: 1, duration: duration });
 
-    var tb = gsap.timeline();
-    tb.fromTo(bottomOrigin, { opacity: 1 }, { y: "-100", opacity: 0, duration: duration });
-    tb.fromTo(bottomDestination, { y: "500", opacity: 0 }, { y: "0", opacity: 1, duration: duration });
+    // var tb = gsap.timeline();
+    // tb.fromTo(bottomOrigin, { opacity: 1 }, { y: "-100", opacity: 0, duration: duration });
+    // tb.fromTo(bottomDestination, { y: "500", opacity: 0 }, { y: "0", opacity: 1, duration: duration });
 
-    var bt = gsap.timeline();
-    bt.fromTo(bottomOneOrigin, { opacity: 1 }, { y: "-100", opacity: 0, duration: duration });
-    bt.fromTo(bottomOneDestination, { y: "400", opacity: 0 }, { y: "0", opacity: 1, duration: duration });
+    // var bt = gsap.timeline();
+    // bt.fromTo(bottomOneOrigin, { opacity: 1 }, { y: "-100", opacity: 0, duration: duration });
+    // bt.fromTo(bottomOneDestination, { y: "400", opacity: 0 }, { y: "0", opacity: 1, duration: duration });
 
-    var btTwo = gsap.timeline();
-    btTwo.fromTo(bottomTwoOrigin, { opacity: 1 }, { y: "-100", opacity: 0, duration: duration });
-    btTwo.fromTo(bottomTwoDestination, { y: "500", opacity: 0 }, { y: "0", opacity: 1, duration: duration });
+    // var btTwo = gsap.timeline();
+    // btTwo.fromTo(bottomTwoOrigin, { opacity: 1 }, { y: "-100", opacity: 0, duration: duration });
+    // btTwo.fromTo(bottomTwoDestination, { y: "500", opacity: 0 }, { y: "0", opacity: 1, duration: duration });
   },
 });
