@@ -14,7 +14,7 @@ const getImageUrl = (section, index) => {
 }
 
 // Preload the images 
-for (let s = 0; s <= 12; s++) {
+for (let s = 1; s <= 2; s++) {
   for (let i = 1; i <= 30; i++) {
     const img = new Image();
     img.src = getImageUrl(s, i);
@@ -128,6 +128,14 @@ new fullpage("#fullpage", {
 //  images from 1 to last exclude after load start here
   onLeave: (origin, destination, direction) => {
     //animateInterSection(0, 1, direction);
+
+    // Preload the images of next section
+    if (direction === "down") {
+      for (let i = 1; i <= 30; i++) {
+        const img = new Image();
+        img.src = getImageUrl(destination.index + 2, i);
+      }
+    }
 
     animateInterSection(origin.index+1, destination.index+1, direction);
     // Animate the content
