@@ -1,7 +1,7 @@
 body 
     {
     margin: 0px;
-    background-color: #000 !important;
+    /* background-color: #000 !important; */
   }
   .large-6{
 width: 100%;
@@ -319,7 +319,7 @@ width: 100%;
     font-family: 'Poppins';
 }
 /*********************************** Section 10 styles ********************************************/
-.section10Head{
+.section11Head{
     margin-left: 0;
     margin-right: 0;
     text-align: center;
@@ -327,7 +327,7 @@ width: 100%;
     font-size: 3rem;
     margin-bottom: 3%;
 }
-.section10row1 {
+.section11row1 {
     /*margin-bottom: 40%;*/
     text-align: center;
     display: flex;
@@ -338,22 +338,22 @@ width: 100%;
     color: #fff;
     width: 100% !important;
 }
-.section10Column2{
+.section11Column2{
   display: flex;
 }
-.section10iconImg{
+.section11iconImg{
   width: 40px;
   height: 40px;
 }
 
-.section10row2{
+.section11row2{
     margin-bottom: 15%;
     color: #fff;
     max-width: 100% !important;
     display: flex;
     flex-direction: row-reverse;
 }
-.section10Card{
+.section11Card{
   padding:20%;
   word-break: break-word;
   width: 50%;
@@ -364,20 +364,20 @@ width: 100%;
   padding-left:40px;
   text-align:left;
 }
-.section10CardHead{
+.section11CardHead{
     margin-top: 2%;
     margin-left: 4%;
     font-size: 1.7rem;
     color: #fff;
     font-weight: 500;
 }
-/* .section10CardTiltle{
+/* .section11CardTiltle{
   margin-top: 2%;
   margin-left: 4%;
   color: #fff;
   font-size: 1.3rem;
 } */
-.section10CardContent {
+.section11CardContent {
    font-size: 1.2rem;
     letter-spacing: 0.2px;
     text-align: justify;
@@ -386,18 +386,18 @@ width: 100%;
 }
 /*********************************** Section 11 styles ********************************************/
 
-.section11row1 h2 {
+.section13row1 h2 {
   color: #fff;
   text-align: center;
   font-weight: 500;
 }
-.section11Head{
+.section13Head{
   margin-bottom: -7%;
 }
-.section11Card1{
+.section13Card1{
   width: 40%;
 }
-.section11Card2{
+.section13Card2{
   width: 40%;
   padding:20%;
   word-break: break-word;
@@ -410,13 +410,13 @@ width: 100%;
   text-align:left;
   margin-top: -7%;
 }
-.section11Card2Head{
+.section13Card2Head{
     padding-bottom: 10px;
     /* margin-top: 50px; */
     font-size: 1.7rem;
     color: #fff;
 }
-.section11Card2Content {
+.section13Card2Content {
     font-size: 1.2rem;
     letter-spacing: 0.2px;
     text-align: justify;
@@ -424,15 +424,15 @@ width: 100%;
     color: #fff;
 
 }
-.section11Card2Link{
+.section13Card2Link{
 text-decoration: underline;
 color: #FFDC2A;
 }
-.section11row2 {
+.section13row2 {
   display: grid;
   margin-left: 9%;
 }
-.section11Card1fisrtRow p {
+.section13Card1fisrtRow p {
   font-size: 250px;
   font-weight: 700;
   background: linear-gradient(90deg, #0A78CA, #8111BB);
