@@ -1,33 +1,38 @@
-body 
-    {
+body {
     margin: 0px;
     /* background-color: #000 !important; */
-  }
-  .large-6{
-width: 100%;
-  }
-  .section{
-      height: 100vh;
-      width: 50%;
-  }
-  .fp-table {
+}
+
+
+/* .large-6 {
+    width: 100%;
+} */
+
+.section {
+    height: 100vh;
+    width: 50%;
+}
+
+.fp-table {
     display: table;
     table-layout: fixed;
     width: 100%;
-  }
-  .fp-tableCell {
+}
+
+.fp-tableCell {
     display: table-cell;
     vertical-align: middle;
     width: 100%;
-  }
-  .section1Row,
-   .section2Row1,
-   .section2Row2,
-   .section3row,
-   .section4Row,
-   .section5Row,
-   .section9row1,
-   .bottom-div{
+}
+
+.section1Row,
+.section2Row1,
+.section2Row2,
+.section3row,
+.section4Row,
+.section5Row,
+.section9row1,
+.bottom-div {
     font-family: "Source Sans Pro", sans-serif;
     font-size: 5em;
     color: white;
@@ -35,33 +40,40 @@ width: 100%;
     margin-right: 0;
     margin-left: 0;
     margin-bottom: 8%;
-    max-width: 100% !important;  
-  }
-  .section1Row, 
-  .section3row, 
-  .section5Row,
-  .section9row1{
-  flex-direction: row-reverse !important;
+    max-width: 100% !important;
 }
-  .w-half {
+
+.section1Row,
+.section3row,
+.section5Row,
+.section9row1 {
+    flex-direction: row-reverse !important;
+}
+
+.w-half {
     align-self: center;
     width: 100%;
     margin-left: 0%;
     margin-right: 0%;
-  }
-  .w-full {
+}
+
+.w-full {
     width: 100%;
-  }
-  .h-half {
+}
+
+.h-half {
     height: 50%;
-  }
-  .h-full {
+}
+
+.h-full {
     height: 100%;
-  }
-  .text-left {
+}
+
+.text-left {
     text-align: left;
-  }
-  .fixedWrapper {
+}
+
+.fixedWrapper {
     z-index: 50;
     position: fixed;
     top: 0;
@@ -71,12 +83,16 @@ width: 100%;
     width: 100%;
     height: 100%;
     background-size: contain;
-  }
-  /***************************** Section 1 style **************************************/
-.section1ColumnRight{
-  padding-left: 10px;
 }
-.section1-text{
+
+
+/***************************** Section 1 style **************************************/
+
+.section1ColumnRight {
+    padding-left: 10px;
+}
+
+.section1-text {
     margin-left: 20%;
     font-size: 7rem;
     font-weight: 700;
@@ -84,30 +100,40 @@ width: 100%;
     line-height: 1.2 !important;
     letter-spacing: 2px;
 }
+
+
 /********************************** section 2 row 1 style ******************************/
-.bottom-text{
-  font-size: 3rem;
-  font-weight: bold;
-  color: #fff;
+
+.bottom-text {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
 }
-.bottom-div{
-  text-align: center;
-  justify-content: center;
-  margin-top: -10% !important;
-  position: fixed;
+
+.bottom-div {
+    text-align: center;
+    justify-content: center;
+    margin-top: -10% !important;
+    position: fixed;
 }
-  .spn1{
+
+.spn1 {
     background: linear-gradient(90deg, #0A78CA, #8111BB);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
-.spn2{
-  color: #0095EF;
 }
-.section2ColumnLeft{
-     margin: 0% 0% 0% 10% !important;
+
+.spn2 {
+    color: #0095EF;
 }
+
+.section2ColumnLeft {
+    margin: 0% 0% 0% 10% !important;
+}
+
+
 /* **************************Section 2 row 2 style  *******************************/
+
 .icon-div {
     margin-top: 0%;
     width: 100%;
@@ -115,140 +141,165 @@ width: 100%;
     font-weight: bold;
     color: #fff;
 }
-.icon1{
-  width: 55px;
-  height: 55px;
+
+.icon1 {
+    width: 55px;
+    height: 55px;
 }
-.cardHead{
+
+.cardHead {
     margin-top: 2%;
     margin-left: 4%;
     color: #fff;
     font-size: 1.5rem;
 }
-.cardContent{
-  font-size: 30px;
-  margin-top: 0px !important;
-  font-weight: bold;
-  color: #fff;
+
+.cardContent {
+    font-size: 30px;
+    margin-top: 0px !important;
+    font-weight: bold;
+    color: #fff;
 }
-.div-content{
+
+.div-content {
     font-size: 1.2rem;
     letter-spacing: 0.2px;
     text-align: justify;
 }
 
+
 /* ******************************section 3 style *************************************/
-.section3row{
-  display: flex;
-}
-.section3ColumnLeft{
-  display: table-cell;
-  align-self: normal;
-  margin-right: 1%;
-}
-.section3ColumnRight{
-  align-self: normal;
-  justify-content: space-around;
+
+.section3row {
+    display: flex;
 }
 
-.section3Sides{
-  width: 10%;
-  }
-.imageCard{
-  border-radius: 25px;
-}
-.imageRight{
-  border-radius: 25px;
-  z-index: 99;
+.section3ColumnLeft {
+    display: table-cell;
+    align-self: normal;
+    margin-right: 1%;
 }
 
-.section3Card{
-  padding:20%;
-  word-break: break-word;
-  /*width: 50%;*/
-  background-color: #141414;
-  border-radius: 50px;
-  padding: 15px;
-  padding-top: 40px;
-  padding-left:30px;
-  text-align:left;
+.section3ColumnRight {
+    align-self: normal;
+    justify-content: space-around;
 }
-.section3CardHead{
+
+.section3Sides {
+    width: 10%;
+}
+
+.imageCard {
+    border-radius: 25px;
+}
+
+.imageRight {
+    border-radius: 25px;
+    z-index: 99;
+}
+
+.section3Card {
+    padding: 20%;
+    word-break: break-word;
+    /*width: 50%;*/
+    background-color: #141414;
+    border-radius: 50px;
+    padding: 15px;
+    padding-top: 40px;
+    padding-left: 30px;
+    text-align: left;
+}
+
+.section3CardHead {
     padding-bottom: 10px;
     margin-top: 50px;
     font-size: 1.7rem;
     color: #fff;
 }
+
 .section3CardContent {
     font-size: 1.2rem;
     letter-spacing: 0.2px;
     text-align: justify;
     padding-right: 50px;
 }
+
+
 /* ******************************section 4 style *************************************/
 
-.section4Card{
-  padding:20%;
-  word-break: break-word;
-  width: 50%;
-  background-color: #141414;
-  border-radius: 50px;
-  padding: 15px;
-  /*padding-top: 25px;*/
-  padding-left:40px;
-  text-align:left;
+.section4Card {
+    padding: 20%;
+    word-break: break-word;
+    width: 50%;
+    background-color: #141414;
+    border-radius: 50px;
+    padding: 15px;
+    /*padding-top: 25px;*/
+    padding-left: 40px;
+    text-align: left;
 }
-.section4CardHead{
+
+.section4CardHead {
     margin-top: 0px !important;
     font-size: 1.7rem;
     color: #fff;
     font-weight: 500;
 }
-.section4CardTiltle{
-  margin-top: 4%;
-  margin-left: 4%;
-  color: #fff;
-  font-size: 1.3rem;
+
+.section4CardTiltle {
+    margin-top: 4%;
+    margin-left: 4%;
+    color: #fff;
+    font-size: 1.3rem;
 }
+
 .section4CardContent {
-   font-size: 1.2rem;
+    font-size: 1.2rem;
     letter-spacing: 0.2px;
     text-align: justify;
     padding-right: 50px;
 }
+
+
 /* ******************************section 5 style *************************************/
-.section5Card{
-  padding:20%;
-  word-break: break-word;
-  width: 50%;
-  background-color: #141414;
-  border-radius: 50px !important;
-  padding: 15px;
-  padding-top: 25px;
-  padding-bottom: 50px;
-  padding-left:40px;
-  text-align:left;
+
+.section5Card {
+    padding: 20%;
+    word-break: break-word;
+    width: 50%;
+    background-color: #141414;
+    border-radius: 50px !important;
+    padding: 15px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    padding-left: 40px;
+    text-align: left;
 }
-.section5CardHead{
+
+.section5CardHead {
     margin-top: 0px !important;
     font-size: 1.7rem;
     color: #fff;
     font-weight: 500;
 }
-.section5CardTiltle{
-  margin-top: 4%;
-  margin-left: 4%;
-  color: #fff; 
-  font-size: 1.3rem;
+
+.section5CardTiltle {
+    margin-top: 4%;
+    margin-left: 4%;
+    color: #fff;
+    font-size: 1.3rem;
 }
+
 .section5CardContent {
-   font-size: 1.2rem;
+    font-size: 1.2rem;
     padding-right: 50px;
     letter-spacing: 0.2px;
     text-align: justify;
 }
 
+
 /*********************************** Section 6 styles ********************************************/
+
 .section6Row1 {
     margin: -5% 0% 0% 5%;
     width: 100%;
@@ -256,22 +307,26 @@ width: 100%;
     font-weight: bold;
     color: #fff;
 }
-.section6Row2{
- max-width: 100% !important; 
- margin: 0% 0% 0% 5%;
+
+.section6Row2 {
+    max-width: 100% !important;
+    margin: 0% 0% 0% 5%;
 }
-.section6Title{
+
+.section6Title {
     margin-top: 1%;
     margin-left: 2%;
     color: #fff;
     font-size: 1.7rem;
 }
-.section6Main{
+
+.section6Main {
     display: flex;
     flex-direction: column-reverse;
 }
+
 .section6Row3H3 {
-   color: #fff;
+    color: #fff;
     font-size: 1.5rem;
     word-break: break-word;
     width: 75%;
@@ -280,11 +335,15 @@ width: 100%;
     letter-spacing: 1px;
     padding: 0px;
 }
+
 .section6Row2imgMob {
     display: none;
 }
+
+
 /*********************************** Section 7 styles ********************************************/
-.section7div{
+
+.section7div {
     text-align: center;
     left: 0;
     right: 0;
@@ -292,25 +351,31 @@ width: 100%;
     margin-top: -17% !important;
     position: fixed;
 }
-.section7text{
-  font-size: 3rem;
-  font-weight: bold;
-  color: #fff;
+
+.section7text {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
 }
-  .spn3{
+
+.spn3 {
     background: linear-gradient(90deg, #0A78CA, #8111BB);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
-  .section7text br{
+}
+
+.section7text br {
     display: none !important;
 }
 
+
 /*********************************** Section 9 styles ********************************************/
+
 .section9columnRight {
-   padding: 0px 25px 0px 25px;
+    padding: 0px 25px 0px 25px;
 }
-.section9text{
+
+.section9text {
     font-size: 2rem;
     color: #fff;
     line-height: 1.2;
@@ -318,8 +383,47 @@ width: 100%;
     letter-spacing: 2px;
     font-family: 'Poppins';
 }
-/*********************************** Section 10 styles ********************************************/
-.section11Head{
+
+
+/* ******************************section 10 style *************************************/
+
+.section10Card {
+    padding: 20%;
+    word-break: break-word;
+    width: 50%;
+    background-color: #141414;
+    border-radius: 50px;
+    padding: 15px;
+    /*padding-top: 25px;*/
+    padding-left: 40px;
+    text-align: left;
+}
+
+.section10CardHead {
+    margin-top: 0px !important;
+    font-size: 1.7rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.section10CardTiltle {
+    margin-top: 4%;
+    margin-left: 4%;
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+.section10CardContent {
+    font-size: 1.2rem;
+    letter-spacing: 0.2px;
+    text-align: justify;
+    padding-right: 50px;
+}
+
+
+/*********************************** Section 11 styles ********************************************/
+
+.section11Head {
     margin-left: 0;
     margin-right: 0;
     text-align: center;
@@ -327,6 +431,7 @@ width: 100%;
     font-size: 3rem;
     margin-bottom: 3%;
 }
+
 .section11row1 {
     /*margin-bottom: 40%;*/
     text-align: center;
@@ -334,368 +439,392 @@ width: 100%;
     width: 100%;
     margin-bottom: 2%;
 }
-.iconCards{
+
+.iconCards {
     color: #fff;
     width: 100% !important;
 }
-.section11Column2{
-  display: flex;
-}
-.section11iconImg{
-  width: 40px;
-  height: 40px;
+
+.section11Column2 {
+    display: flex;
 }
 
-.section11row2{
+.section11iconImg {
+    width: 40px;
+    height: 40px;
+}
+
+.section11row2 {
     margin-bottom: 15%;
     color: #fff;
     max-width: 100% !important;
     display: flex;
     flex-direction: row-reverse;
 }
-.section11Card{
-  padding:20%;
-  word-break: break-word;
-  width: 50%;
-  background-color: #141414;
-  border-radius: 50px;
-  padding: 15px;
-  /*padding-top: 25px;*/
-  padding-left:40px;
-  text-align:left;
+
+.section11Card {
+    padding: 20%;
+    word-break: break-word;
+    width: 50%;
+    background-color: #141414;
+    border-radius: 50px;
+    padding: 15px;
+    /*padding-top: 25px;*/
+    padding-left: 40px;
+    text-align: left;
 }
-.section11CardHead{
+
+.section11CardHead {
     margin-top: 2%;
     margin-left: 4%;
     font-size: 1.7rem;
     color: #fff;
     font-weight: 500;
 }
+
+
 /* .section11CardTiltle{
   margin-top: 2%;
   margin-left: 4%;
   color: #fff;
   font-size: 1.3rem;
 } */
+
 .section11CardContent {
-   font-size: 1.2rem;
+    font-size: 1.2rem;
     letter-spacing: 0.2px;
     text-align: justify;
     padding-right: 50px;
     margin-top: 20px;
 }
-/*********************************** Section 11 styles ********************************************/
+
+
+/*********************************** Section 13 styles ********************************************/
 
 .section13row1 h2 {
-  color: #fff;
-  text-align: center;
-  font-weight: 500;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
 }
-.section13Head{
-  margin-bottom: -7%;
+
+.section13Head {
+    margin-bottom: -7%;
 }
-.section13Card1{
-  width: 40%;
+
+.section13Card1 {
+    width: 40%;
 }
-.section13Card2{
-  width: 40%;
-  padding:20%;
-  word-break: break-word;
-  /*width: 50%;*/
-  background-color: #141414;
-  border-radius: 50px;
-  padding: 15px;
-  /* padding-top: 40px; */
-  padding-left:30px;
-  text-align:left;
-  margin-top: -7%;
+
+.section13Card2 {
+    width: 40%;
+    padding: 20%;
+    word-break: break-word;
+    /*width: 50%;*/
+    background-color: #141414;
+    border-radius: 50px;
+    padding: 15px;
+    /* padding-top: 40px; */
+    padding-left: 30px;
+    text-align: left;
+    margin-top: -7%;
 }
-.section13Card2Head{
+
+.section13Card2Head {
     padding-bottom: 10px;
     /* margin-top: 50px; */
     font-size: 1.7rem;
     color: #fff;
 }
+
 .section13Card2Content {
     font-size: 1.2rem;
     letter-spacing: 0.2px;
     text-align: justify;
     padding-right: 50px;
     color: #fff;
+}
 
+.section13Card2Link {
+    text-decoration: underline;
+    color: #FFDC2A;
 }
-.section13Card2Link{
-text-decoration: underline;
-color: #FFDC2A;
-}
+
 .section13row2 {
-  display: grid;
-  margin-left: 9%;
+    display: grid;
+    margin-left: 9%;
 }
+
 .section13Card1fisrtRow p {
-  font-size: 250px;
-  font-weight: 700;
-  background: linear-gradient(90deg, #0A78CA, #8111BB);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    font-size: 250px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #0A78CA, #8111BB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
 .percentage {
-  color: #8111BB !important;
-  font-size: 100px;
-  vertical-align: text-top;
-  font-weight: 800;
-  margin-left: -6%;
+    color: #8111BB !important;
+    font-size: 100px;
+    vertical-align: text-top;
+    font-weight: 800;
+    margin-left: -6%;
 }
+
 .large-7.columns.txt30 {
-  padding: 0px;
-  text-align: end;
+    padding: 0px;
+    text-align: end;
 }
-.percentageColumn{
-  height: 200px;
-  text-align: center;
-  padding-right: 50%;
+
+.percentageColumn {
+    height: 200px;
+    text-align: center;
+    padding-right: 50%;
 }
+
 .percentageRow1 {
-  color: #fff;
-  font-size: larger;
+    color: #fff;
+    font-size: larger;
 }
-.percentageRow2{
-padding: 10px 0px 0px 0px;
-color: #fff;
-font-size: smaller;
+
+.percentageRow2 {
+    padding: 10px 0px 0px 0px;
+    color: #fff;
+    font-size: smaller;
 }
+
+
 /****************************** Media screen styles for mobile screen ******************************/
+
 @media only screen and (max-width: 540px) {
     .fp-tableCell {
-    vertical-align: top !important;
-  }
-  .fixedWrapper {
-    position: sticky;
-    margin-bottom: 0% !important;
-    left: 0;
-    right: 0;
-    width: 100%;
-    background-size: contain;
+        vertical-align: top !important;
+    }
+    .fixedWrapper {
+        position: sticky;
+        margin-bottom: 0% !important;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-size: contain;
+    }
+    .section1Row,
+    .section2Row1,
+    .section2Row2,
+    .section3row,
+    .section4Row,
+    .section5Row,
+    .bottom-div {
+        display: grid;
+        margin-top: 15%;
+    }
+    .cardHead {
+        margin-top: 4%;
+    }
+    .div-content {
+        font-size: 1rem;
+    }
+    .div-content br {
+        display: none;
+    }
+    .section1-text {
+        margin-left: 0px;
+        font-size: 4rem;
+        font-weight: 700;
+        color: #fff;
+        line-height: 1 !important;
+    }
+    .bottom-div {
+        margin-bottom: 15% !important;
+    }
+    .bottom-text {
+        font-size: 30px;
+    }
+    .section2ColumnLeft {
+        margin: -10% 0% 0% 0% !important;
+    }
+    .section2ColumnLeft {
+        margin-left: 0px;
+        padding: 0px !important;
+    }
+    .cardContent {
+        font-size: 20px;
+    }
+    .section1Row,
+    h1 {
+        line-height: 1 !important;
+    }
+    /*.small-12 {*/
+    /*  position: relative;*/
+    /*  width: 90% !important;*/
+    /*  height: 80% !important;*/
+    /*  margin-left: 5% !important;*/
+    /*}*/
+    .section3CardHead {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .imageCard {
+        margin-top: 10px;
+    }
+    .section3Card {
+        word-break: break-word;
+        background-color: #141414;
+        border-radius: 25px !important;
+        padding: 15px;
+        text-align: left;
+    }
+    .section3CardHead {
+        padding-bottom: 10px;
+        margin-top: 5px;
+        font-size: 1.3rem;
+        color: #fff;
+    }
+    .section3CardContent {
+        font-size: 15px;
+        text-align: justify;
+        padding-right: 0px;
+    }
+    .section3ColumnLeft {
+        bottom: 0;
+        padding: 0px !important;
+    }
+    .section4ColumnRight {
+        padding: 0px !important;
+        margin-left: 1%;
+    }
+    /**************************** section 4 mobile *****************************/
+    .section4Card {
+        word-break: break-word;
+        width: 100%;
+        background-color: #141414;
+        padding-top: 0px;
+        padding-left: 20px;
+        padding-bottom: 0px;
+        border-radius: 25px !important;
+        text-align: left;
+    }
+    .section4CardHead {
+        padding-bottom: 0px;
+        font-size: 1.3rem;
+        color: #fff;
+        font-weight: 700;
+        margin-top: -15px !important;
+    }
+    .section4CardContent {
+        font-size: 1rem;
+        letter-spacing: 0px;
+        text-align: justify;
+        padding-right: 0px;
+    }
+    /**************************** section 5 mobile *****************************/
+    .section5Card {
+        word-break: break-word;
+        width: 100%;
+        background-color: #141414;
+        border-radius: 25px !important;
+        padding-top: 0px;
+        padding-left: 20px;
+        padding-bottom: 0px;
+        text-align: left;
+    }
+    .section5CardHead {
+        padding-bottom: 0px;
+        font-size: 1.3rem;
+        color: #fff;
+        font-weight: 700;
+        margin-top: -15px !important;
+    }
+    .section5CardContent {
+        font-size: 1rem;
+        letter-spacing: 0px;
+        text-align: justify;
+        padding-right: 0px;
+    }
+    /*************************** section 6 mobile **********************/
+    .section6Row3H3 {
+        color: #fff;
+        font-size: 15px;
+        word-break: break-word;
+        width: 100% !important;
+        margin: 2%;
+        line-height: 1;
+        letter-spacing: 1px;
+        padding: 0px;
+    }
+    .section6Main {
+        display: block;
+    }
+    .section6Title {
+        margin-top: 3%;
+        margin-left: 2%;
+    }
+    .section6Row3H3 {
+        font-size: 2rem;
+        word-break: break-word;
+        width: 100% !important;
+    }
+    .section6Row1 {
+        margin: -5% 0% 0% 0%;
+    }
+    .section6Row2 {
+        margin: 5% 0% 0% 0%;
+    }
+    .section6Row2img {
+        display: none;
+    }
+    .section6Row2imgMob {
+        display: block;
+    }
+    /*************************** section 7 mobile **********************/
+    .section7div {
+        margin-top: 0px !important;
+    }
+    .section7text br {
+        display: block !important;
+    }
+    .section7text {
+        font-size: 4rem;
+        line-height: 1;
+    }
+    /*************************** section 9 mobile **********************/
+    .section9text {
+        margin-top: 5px;
+        font-size: 1.5rem;
+    }
+    .section9row1 {
+        flex-direction: column !important;
+    }
+    /*************************** section 10 mobile **********************/
+    .section10Column2 {
+        padding: 10px 0px 0px 0px;
+    }
+    .section10Head {
+        margin: 0 0 0 0;
+        font-size: 2rem;
+    }
+    .icon-title {
+        font-size: 12px;
+    }
+    .section10row2 {
+        display: block;
+    }
+    .section10Card {
+        border-radius: 25px;
+        width: 100% !important;
+        padding-left: 20px;
+    }
+    .section10CardTiltle {
+        font-size: 1.2rem;
+    }
+    .section10CardHead {
+        font-size: 1.5rem;
+    }
+    .section10CardContent {
+        font-size: 1rem;
+        padding-right: 0px;
+    }
+    .section10Column3,
+    .section10Column1 {
+        display: none !important;
+    }
 }
-  .section1Row,
-  .section2Row1,
-  .section2Row2,
-  .section3row,
-  .section4Row,
-  .section5Row,
-  .bottom-div{
-    display: grid;
-    margin-top: 15%;
-}
-.cardHead{
-    margin-top: 4%;
-}
-.div-content{
-    font-size: 1rem;
-}
-.div-content br{
-    display: none;
-}
-.section1-text{
-    margin-left: 0px;
-    font-size: 4rem;
-    font-weight: 700;
-    color: #fff;
-    line-height: 1 !important;
-}
-.bottom-div{
-  margin-bottom: 15% !important;
-}
-.bottom-text{
-  font-size: 30px;
-}
-.section2ColumnLeft{
-  margin: -10% 0% 0% 0% !important;
-}
-.section2ColumnLeft{
-  margin-left: 0px;
-  padding: 0px !important;
-}
-.cardContent{
-  font-size: 20px;
-}
-.section1Row, h1{
-  line-height: 1 !important;
-}
-/*.small-12 {*/
-/*  position: relative;*/
-/*  width: 90% !important;*/
-/*  height: 80% !important;*/
-/*  margin-left: 5% !important;*/
-/*}*/
-.section3CardHead {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.imageCard {
-  margin-top: 10px;
-}
-.section3Card{
-  word-break: break-word;
-  background-color: #141414;
-  border-radius: 25px !important;
-  padding: 15px;
-  text-align:left;
-}
-.section3CardHead{
-    padding-bottom: 10px;
-    margin-top: 5px;
-    font-size: 1.3rem;
-    color: #fff;
-}
-.section3CardContent {
-    font-size: 15px;
-    text-align: justify;
-    padding-right: 0px;
-}
-.section3ColumnLeft{
-    bottom: 0;
-    padding: 0px !important;
-}
-.section4ColumnRight{
- padding: 0px !important;   
- margin-left: 1%;
-}
-/**************************** section 4 mobile *****************************/
-.section4Card{
-    word-break: break-word;
-    width: 100%;
-    background-color: #141414;
-    padding-top: 0px; 
-    padding-left: 20px; 
-    padding-bottom: 0px;
-    border-radius: 25px !important;
-    text-align: left;
-}
-.section4CardHead {
-    padding-bottom: 0px;
-    font-size: 1.3rem;
-    color: #fff;
-    font-weight: 700;
-    margin-top: -15px !important;
-}
-.section4CardContent {
-    font-size: 1rem;
-    letter-spacing: 0px;
-    text-align: justify;
-    padding-right: 0px;
-}
-/**************************** section 5 mobile *****************************/
-.section5Card {
-    word-break: break-word;
-    width: 100%;
-    background-color: #141414;
-    border-radius: 25px !important;
-    padding-top: 0px; 
-    padding-left: 20px; 
-    padding-bottom: 0px;
-    text-align: left;
-}
-.section5CardHead {
-    padding-bottom: 0px;
-    font-size: 1.3rem;
-    color: #fff;
-    font-weight: 700;
-    margin-top: -15px !important;
-}
-.section5CardContent {
-    font-size: 1rem;
-    letter-spacing: 0px;
-    text-align: justify;
-    padding-right: 0px;
-}
-/*************************** section 6 mobile **********************/
-.section6Row3H3 {
-   color: #fff;
-    font-size: 15px;
-    word-break: break-word;
-    width: 100% !important;
-    margin: 2%;
-    line-height: 1;
-    letter-spacing: 1px;
-    padding: 0px;
-}
-.section6Main{
-    display: block;
-}
-.section6Title {
-    margin-top: 3%;
-    margin-left: 2%;
-}
-.section6Row3H3 {
-    font-size: 2rem;
-    word-break: break-word;
-    width: 100% !important;
-}
-.section6Row1 {
-    margin: -5% 0% 0% 0%;
-}
-.section6Row2 {
-    margin: 5% 0% 0% 0%;
-}
-.section6Row2img {
-    display: none;
-}
-.section6Row2imgMob {
-    display: block;
-}
-/*************************** section 7 mobile **********************/
-.section7div{
-   margin-top: 0px !important;
-}
-.section7text br{
-    display: block !important;
-}
-.section7text{
-    font-size: 4rem;
-    line-height: 1;
-}
-/*************************** section 9 mobile **********************/
-.section9text {
-    margin-top: 5px;
-    font-size: 1.5rem;
-}
-.section9row1{
-    flex-direction: column !important;
-}
-
-/*************************** section 10 mobile **********************/
-.section10Column2 {
-    padding: 10px 0px 0px 0px;
-}
-.section10Head {
-    margin: 0 0 0 0;
-    font-size: 2rem;
-}
-.icon-title{
-    font-size: 12px;
-}
-.section10row2 {
-    display: block;
-}
-.section10Card {
-    border-radius: 25px;
-    width: 100% !important;
-    padding-left: 20px;
-}
-.section10CardTiltle {
-    font-size: 1.2rem;
-}
-.section10CardHead{
-    font-size: 1.5rem;
-}
-.section10CardContent {
-    font-size: 1rem;
-    padding-right: 0px;
-}
-.section10Column3,
-.section10Column1{
-    display: none !important;
-} 
-} 
