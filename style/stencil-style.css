@@ -1,6 +1,6 @@
 body {
     margin: 0px;
-    /* background-color: #000 !important; */
+    background-color: #000 !important;
 }
 
 
@@ -113,7 +113,7 @@ body {
 .bottom-div {
     text-align: center;
     justify-content: center;
-    margin-top: -10% !important;
+    margin-top: -8% !important;
     position: fixed;
 }
 
@@ -301,7 +301,7 @@ body {
 /*********************************** Section 6 styles ********************************************/
 
 .section6Row1 {
-    margin: -5% 0% 0% 5%;
+    margin: -3% 0% 0% 5%;
     width: 100%;
     display: flex;
     font-weight: bold;
@@ -387,6 +387,12 @@ body {
 
 /* ******************************section 10 style *************************************/
 
+.section10Row1 .section10Head {
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+}
+
 .section10Card {
     padding: 20%;
     word-break: break-word;
@@ -418,8 +424,12 @@ body {
     letter-spacing: 0.2px;
     text-align: justify;
     padding-right: 50px;
+    color: #fff;
 }
 
+video{
+    border-radius: 30px;
+}
 
 /*********************************** Section 11 styles ********************************************/
 
@@ -498,7 +508,17 @@ body {
     margin-top: 20px;
 }
 
+/*********************************** Section 12 styles ********************************************/
 
+.section13row1 h2 {
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+}
+
+.section13Head {
+    margin-bottom: -7%;
+}
 /*********************************** Section 13 styles ********************************************/
 
 .section13row1 h2 {
@@ -509,6 +529,9 @@ body {
 
 .section13Head {
     margin-bottom: -7%;
+}
+.line2{
+    font-size: x-large;
 }
 
 .section13Card1 {
