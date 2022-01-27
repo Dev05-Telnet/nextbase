@@ -510,14 +510,32 @@ video{
 
 /*********************************** Section 12 styles ********************************************/
 
-.section13row1 h2 {
+.section12row1 h2 {
     color: #fff;
     text-align: center;
     font-weight: 500;
 }
 
-.section13Head {
+.section12Head {
     margin-bottom: -7%;
+}
+
+.slider{
+    display: inline-flex;
+    margin-top: 5%;
+}
+.slider .section12ImageCard{
+    width: 100%;
+    height: 100%;
+    margin: 50px;
+}
+.slider .section12ImageCard img{
+    width: 100%;
+    height: 250px;
+}
+.slick-arrow {
+    color: #fff;
+    font-size: 50px;
 }
 /*********************************** Section 13 styles ********************************************/
 
@@ -615,9 +633,22 @@ video{
     font-size: smaller;
 }
 /*********************************** Section 14 styles ********************************************/
-
-.section14row1{
+.section14row1 h2{
+    margin-bottom: 2%;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    font-size: x-large;
+}
+.section14row2{
     display: flex;
+    color: #fff;
+    font-size: small !important;
+    text-align: center;
+}
+.section14row2 p{
+    font-size:x-small;
+    text-align: center;
 }
 
 /****************************** Media screen styles for mobile screen ******************************/
