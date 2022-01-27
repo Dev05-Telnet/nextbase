@@ -614,7 +614,11 @@ video{
     color: #fff;
     font-size: smaller;
 }
+/*********************************** Section 14 styles ********************************************/
 
+.section14row1{
+    display: flex;
+}
 
 /****************************** Media screen styles for mobile screen ******************************/
 
