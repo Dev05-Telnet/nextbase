@@ -127,13 +127,18 @@ body {
     color: #0095EF;
 }
 
-.section2ColumnLeft {
+/* .section2ColumnLeft {
     margin: 0% 0% 0% 10% !important;
-}
+} */
 
 
 /* **************************Section 2 row 2 style  *******************************/
+@media only screen and( max-width: 541){
 
+}
+.section2Card{
+    width: 80%;
+}
 .icon-div {
     margin-top: 0%;
     width: 100%;
@@ -536,6 +541,11 @@ video{
 .slick-arrow {
     color: #fff;
     font-size: 50px;
+}
+span .prev_arrow{
+    width: 50px;
+    height: 50px;
+    background-color: red;
 }
 /*********************************** Section 13 styles ********************************************/
 

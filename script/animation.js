@@ -2,7 +2,7 @@
  * Determine if the device is a mobile based on the screen size
  * screen resolution range for moblie devices is from  360*640 to 414*896
  */
-var isMobile = window.innerWidth < 540;
+var isMobile = window.innerWidth <540;
 
 // get image url for the section with frame index
 const getImageUrl = (section, index) => {
@@ -15,10 +15,10 @@ const getImageUrl = (section, index) => {
 
 
     // console.log('outgoing section', section)
-        return `https://ayatacommerce-ecommerce.github.io/nextbase/assets/images/${isMobile ? 'Mobile/':''}Sequence_${section.toString().padStart(2, "0")}/sh_${section
-          .toString().padStart(2, "0")}0${isMobile ? '_m':''}.${index.toString().padStart(5, "0")}.png`;
-//     return `/assets/images/${isMobile ? 'Mobile/':''}Sequence_${section.toString().padStart(2, "0")}/sh_${section
-//     .toString().padStart(2, "0")}0${isMobile ? '_m':''}.${index.toString().padStart(5, "0")}.png`;
+        // return `/assets/images/${isMobile ? 'Mobile/':''}Sequence_${section.toString().padStart(2, "0")}/sh_${section
+        //   .toString().padStart(2, "0")}0${isMobile ? '_m':''}.${index.toString().padStart(5, "0")}.png`;
+    return `https://ayatacommerce-ecommerce.github.io/nextbase/assets/images/${isMobile ? 'Mobile/':''}Sequence_${section.toString().padStart(2, "0")}/sh_${section
+    .toString().padStart(2, "0")}0${isMobile ? '_m':''}.${index.toString().padStart(5, "0")}.png`;
 }
 
 // Preload the images 

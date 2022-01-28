@@ -1,0 +1,18 @@
+/* Medium screen size from 540 to 767 */
+@media only screen and (min-width:540px) and (max-width:767px){}
+
+@media only screen and (min-width:541px) and (max-width:800px){
+    /* section 1 */
+    .section1-text{
+        font-size: 4rem !important;
+    }
+    /* section 2 */
+    .cardContent{
+        font-size: 20px;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:1200px){
+    .section1-text{
+        font-size: 5rem !important;
+    }
+}
