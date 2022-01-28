@@ -6,7 +6,7 @@ var isMobile = window.innerWidth <540;
 
 // get image url for the section with frame index
 const getImageUrl = (section, index) => {
-    // console.log('incoming ', section)
+    console.log('incoming ', section)
     if (section <= 0 || section == 4 || section == 10 || section == 12 || section == 14) return `https://ayatacommerce-ecommerce.github.io/nextbase/assets/images/${isMobile ? 'Mobile/':''}Sequence_01/sh_010${isMobile ? '_m':''}.00001.png`;
     if (section > 4) section = section - 1
     if (section >= 10) section = section - 1
@@ -14,7 +14,7 @@ const getImageUrl = (section, index) => {
     if (section >= 12) section = section - 1
 
 
-    // console.log('outgoing section', section)
+    console.log('outgoing section', section)
         // return `/assets/images/${isMobile ? 'Mobile/':''}Sequence_${section.toString().padStart(2, "0")}/sh_${section
         //   .toString().padStart(2, "0")}0${isMobile ? '_m':''}.${index.toString().padStart(5, "0")}.png`;
     return `https://ayatacommerce-ecommerce.github.io/nextbase/assets/images/${isMobile ? 'Mobile/':''}Sequence_${section.toString().padStart(2, "0")}/sh_${section
