@@ -15,10 +15,10 @@ const getImageUrl = (section, index) => {
 
 
     console.log('outgoing section', section)
-        // return `/assets/images/${isMobile ? 'Mobile/':''}Sequence_${section.toString().padStart(2, "0")}/sh_${section
-        //   .toString().padStart(2, "0")}0${isMobile ? '_m':''}.${index.toString().padStart(5, "0")}.png`;
-    return `https://ayatacommerce-ecommerce.github.io/nextbase/assets/images/${isMobile ? 'Mobile/':''}Sequence_${section.toString().padStart(2, "0")}/sh_${section
-    .toString().padStart(2, "0")}0${isMobile ? '_m':''}.${index.toString().padStart(5, "0")}.png`;
+        return `https://sadectip.sirv.com/images/${isMobile ? 'Mobile/':''}Sequence_${section.toString().padStart(2, "0")}/sh_${section
+          .toString().padStart(2, "0")}0${isMobile ? '_m':''}.${index.toString().padStart(5, "0")}.png`;
+    // return `https://ayatacommerce-ecommerce.github.io/nextbase/assets/images/${isMobile ? 'Mobile/':''}Sequence_${section.toString().padStart(2, "0")}/sh_${section
+    // .toString().padStart(2, "0")}0${isMobile ? '_m':''}.${index.toString().padStart(5, "0")}.png`;
 }
 
 // Preload the images 
@@ -66,7 +66,7 @@ img.onload = function() {
     context.clearRect(0, 0, canvas.width, canvas.height);
     context.drawImage(img, 0, 0, canvas.width, canvas.height);
 };
-var scrollingSpeed = 2000;
+var scrollingSpeed = 1500;
 
 /*
  * Add Entry animation
